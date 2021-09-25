@@ -14,9 +14,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        Integer a = 1000000000;
-        System.out.println(a);
-        System.out.println(a * 3);
-        System.out.println(new BigInteger("100000000000"));
+        System.out.println("ede".startsWith(""));
+        System.out.println("abcd".substring(0, 0).equals(""));
     }
 }

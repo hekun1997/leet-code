@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.object.ListNode;
+
 import java.math.BigInteger;
 import java.util.Arrays;
 import java.util.List;
@@ -34,13 +36,7 @@ import java.util.List;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class ListNode {
-     Integer val;
-     ListNode next;
-     ListNode() {}
-     ListNode(int val) { this.val = val; }
-     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- }
+
 public class SumOfTwoNumbersWithList {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int multiple = 1;
