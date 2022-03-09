@@ -57,9 +57,7 @@ public class _35 {
         if (nums[mid] >= target){
             return mid;
         }
-//        if (nums[mid] > target){
-//            return Math.max(mid - 1, 0);
-//        }
+
         return mid + 1;
     }
     public static void main(String[] args) {
