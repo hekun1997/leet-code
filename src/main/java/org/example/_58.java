@@ -1,7 +1,5 @@
 package org.example;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 /**
  * 给你一个字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中最后一个单词的长度。
  *
