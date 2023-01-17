@@ -2,9 +2,9 @@ package org.example.forOffer;
 
 /**
  * Created by hekun on 2023/1/15 09:51
- * 在一个 n * m 的二维数组中，每一行都按照从左到右 非递减 的顺序排序，每一列都按照从上到下 非递减 的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+ * 在一个 n * m 的二维数组中，每一行都按照从左到右非递减的顺序排序，每一列都按照从上到下非递减的顺序排序。请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
  *
- *  
+ * 
  *
  * 示例:
  *
@@ -17,11 +17,11 @@ package org.example.forOffer;
  *   [10, 13, 14, 17, 24],
  *   [18, 21, 23, 26, 30]
  * ]
- * 给定 target = 5，返回 true。
+ * 给定 target=5，返回true。
  *
- * 给定 target = 20，返回 false。
+ * 给定target=20，返回false。
  *
- *  
+ * 
  *
  * 限制：
  *
@@ -29,7 +29,7 @@ package org.example.forOffer;
  *
  * 0 <= m <= 1000
  *
- *  
+ * 
  *
  * 注意：本题与主站 240 题相同：https://leetcode-cn.com/problems/search-a-2d-matrix-ii/
  *

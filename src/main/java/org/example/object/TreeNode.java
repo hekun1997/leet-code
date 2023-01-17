@@ -12,3 +12,7 @@ public class TreeNode {
         this.right = right;
     }
 }
+
+//        for (int i = 1; i < 6; i++) {
+//            System.out.println("TreeNode treeNode" + i + " = new TreeNode(" + i + ");");
+//        }
