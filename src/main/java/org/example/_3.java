@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.Deque;
+import java.util.LinkedList;
+
 /**
  * 给定一个字符串 s ，请你找出其中不含有重复字符的最长子串的长度。
  *
@@ -33,28 +36,23 @@ package org.example;
  */
 public class _3 {
     public static int lengthOfLongestSubstring(String s) {
-        if(s.length()==1){
-            return 1;
-        }
-        String sub;
-        int len = 0;
-        for (int i = 0; i < s.length(); i++){
-            for (int j = i + 1; j < s.length() + 1; j++){
-                sub = s.substring(i, j);
-                if (sub.contains(String.valueOf(s.charAt(j - 1)))){
-                    if (len < sub.length()) {
-                        len = sub.length();
-                    }
-                    //break;
-                }
+        Deque<Character> queue = new LinkedList<>();
+        int maxLength = 0;
+        for (int i = 0; i < s.length(); i++) {
+            Character curr = s.charAt(i);
+            while (queue.contains(curr)) {
+                queue.removeFirst();
+            }
+            queue.addLast(curr);
+            if (maxLength < queue.size()) {
+                maxLength = queue.size();
             }
         }
-
-        return len;
+        return maxLength;
     }
 
     public static void main(String[] args) {
-        int len = lengthOfLongestSubstring("abcabcbb");
+        int len = lengthOfLongestSubstring("bbbbb");
         System.out.println(len);
     }
 }
