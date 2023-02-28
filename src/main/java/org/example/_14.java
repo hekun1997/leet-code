@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Arrays;
+
 /**
  * 编写一个函数来查找字符串数组中的最长公共前缀。
  *
@@ -59,7 +61,20 @@ public class _14 {
         return pre_suffix;
     }
 
+    public static String longestCommonPrefix2(String[] strs) {
+        StringBuilder prefix = new StringBuilder();
+        Arrays.sort(strs);
+        int num = Math.min(strs[0].length(), strs[strs.length-1].length());
+        for (int i = 0; i < num; i++) {
+            if (strs[0].charAt(i) == strs[strs.length-1].charAt(i)) {
+                prefix.append(strs[0].charAt(i));
+            } else break;
+        }
+        return prefix.toString();
+    }
+
     public static void main(String[] args) {
-        System.out.println(longestCommonPrefix(new String[]{"", ""}).equals(""));
+        String[] strs = new String[]{"flower","flow","flight"};
+        System.out.println(longestCommonPrefix2(strs));
     }
 }
