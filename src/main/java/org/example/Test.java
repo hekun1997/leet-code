@@ -1,9 +1,16 @@
 package org.example;
 
-import java.util.concurrent.ExecutionException;
-
 public class Test {
-    public static void main(String[] args) throws ExecutionException, InterruptedException {
-        System.out.println(10 % 3);
+    public int fib(int n) {
+        int[] dp = new int[n + 1];
+        dp[1] = 1;
+        dp[2] = 2;
+        for (int i = 3; i < n + 1; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        return dp[n];
+    }
+    public static void main(String[] args) {
+        System.out.println(new Test().fib(10));
     }
 }
