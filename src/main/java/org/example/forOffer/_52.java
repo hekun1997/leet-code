@@ -7,7 +7,6 @@ import java.util.Set;
 
 /**
  * Created by hekun on 2023/1/30 11:00
- * 两个链表的第一个公共节点
  */
 public class _52 {
 

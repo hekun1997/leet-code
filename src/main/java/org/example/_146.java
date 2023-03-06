@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Created by hekun on 2023/2/20 09:31
- * 给你一棵二叉树的根节点 root ，返回其节点值的 后序遍历 。
  */
 public class _146 {
     public void traversal(TreeNode node, List<Integer> result) {

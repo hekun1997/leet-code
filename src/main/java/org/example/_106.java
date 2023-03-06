@@ -7,11 +7,6 @@ import java.util.Map;
 
 /**
  * Created by hekun on 2023/2/22 15:44
- * 给定两个整数数组 inorder 和 postorder ，其中 inorder 是二叉树的中序遍历， postorder 是同一棵树的后序遍历，请你构造并返回这颗 二叉树 。
- *
- * 来源：力扣（LeetCode）
- * 链接：https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal
- * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
 public class _106 {
     Map<Integer, Integer> map;  // 方便根据数值查找位置

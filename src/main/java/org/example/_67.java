@@ -1,13 +1,7 @@
 package org.example;
 
-import java.util.Objects;
-
 /**
  * Created by hekun on 2021/10/10 21:51
- * 111
- *  11
- *
- * 1010
  */
 public class _67 {
     public static String addBinary(String a, String b) {

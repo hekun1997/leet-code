@@ -4,7 +4,6 @@ import org.example.object.ListNode;
 
 /**
  * Created by hekun on 2023/1/30 10:05
- * 合并有序链表
  */
 public class _25 {
     public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {

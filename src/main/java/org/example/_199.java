@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Created by hekun on 2023/2/20 16:20
- * 给定一个二叉树的 根节点 root，想象自己站在它的右侧，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
  */
 public class _199 {
 

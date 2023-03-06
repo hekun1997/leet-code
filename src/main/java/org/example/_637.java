@@ -7,8 +7,7 @@ import java.util.List;
 
 /**
  * Created by hekun on 2023/2/20 16:41
- * 给定一个非空二叉树的根节点 root , 以数组的形式返回每一层节点的平均值。与实际答案相差 10-5 以内的答案可以被接受。
- */
+*/
 public class _637 {
     List<List<Integer>> allData = new ArrayList<>();
 

@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Created by hekun on 2023/2/22 20:54
- *
  */
 public class _98 {
     public void traverse(TreeNode node, List<Integer> data) {

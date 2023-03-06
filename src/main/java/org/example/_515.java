@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * Created by hekun on 2023/2/20 19:08
- * 给定一棵二叉树的根节点 root ，请找出该二叉树中每一层的最大值。
  */
 public class _515 {
     private List<Integer> result = new ArrayList<>();
