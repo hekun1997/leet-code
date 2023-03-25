@@ -29,6 +29,6 @@ public class _77 {
     }
 
     public static void main(String[] args) {
-        new _77().combine(4, 2);
+        System.out.println(new _77().combine(4, 3));
     }
 }
