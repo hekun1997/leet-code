@@ -8,31 +8,20 @@ import java.util.Arrays;
 public class _27 {
     // 21.9.25
     public static int removeElement(int[] nums, int val) {
-        int count = 0;
-        for (int i = 0; i < nums.length; i++){
-            if (nums[i] == val){
-                for (int j = i; j < nums.length - 1; j++){
-                    nums[j] = nums[j+1];
+        int count = 0, size = nums.length;
+        for (int i = 0; i < size; i++) {
+            if (nums[i] == val) {
+                for (int j = i; j < size - 1; j++) {
+                    nums[j] = nums[j + 1];
                 }
-                nums[nums.length - 1] = -1;
-                count ++;
+                size--;
                 i--;
+                count++;
             }
         }
-        nums = Arrays.copyOfRange(nums, 0, nums.length - count);
-//        for (int i = 0; i < nums.length; i++){
-//            System.out.println(nums[i]);
-//        }
-        //System.out.println();
-        return nums.length;
+        return count;
     }
 
-    // 23.2.8
-    //  1 2 3 4 3 5
-    //  i
-    //  p
-    //    s
-    //
     public static int removeElement2(int[] nums, int val) {
         int slowIndex = 0; // pointer and slow pointer.
         for (int fastIndex = 0; fastIndex < nums.length; fastIndex++) {
@@ -43,7 +32,8 @@ public class _27 {
         }
         return slowIndex;
     }
+
     public static void main(String[] args) {
-        System.out.println(removeElement2(new int[]{1, 3,9,2,4,2}, 2));
+        System.out.println(removeElement(new int[]{0,1,2,2,3,0,4,2}, 2));
     }
 }
