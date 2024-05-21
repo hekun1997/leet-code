@@ -49,9 +49,31 @@ public class _977 {
         return result;
     }
 
+    public static int[] sortedSquares3(int[] nums) {
+        int left = 0, right = nums.length-1;
+        int[] retVal = new int[nums.length];
+        int pointer = retVal.length-1;
+
+        while (left <= right) {
+            int leftVal = nums[left] * nums[left];
+            int rightVal = nums[right] * nums[right];
+
+            if (leftVal < rightVal) {
+                retVal[pointer--] = rightVal;
+                right--;
+            } else {
+                retVal[pointer--] = leftVal;
+                left++;
+            }
+        }
+
+        return retVal;
+    }
+
+
     public static void main(String[] args) {
-        int[] nums = new int[]{-7,-3,2,3,11};
-        nums = sortedSquares2(nums);
+        int[] nums = new int[]{-4,-1,0,3,10};
+        nums = sortedSquares3(nums);
         for (int i = 0; i < nums.length; i++){
             System.out.print(nums[i] + " ");
         }

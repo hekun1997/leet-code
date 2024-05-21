@@ -23,8 +23,36 @@ public class _209 {
 
         return minLength == Integer.MAX_VALUE ? 0 : minLength;
     }
+
+    public static int minSubArrayLen2(int target, int[] nums) {
+        int retVal = nums.length;
+        int left = 0, right = 0;
+        int sum = nums[0];
+        boolean find = false;
+
+        while (left < nums.length && right < nums.length){
+            if (sum >= target) {
+                find = true;
+                int len = right - left + 1;
+                if (retVal > len) {
+                    retVal = len;
+                }
+                sum -= nums[left++];
+                continue;
+            } else if(sum < target) {
+                right ++;
+                if (right >= nums.length) {
+                    break;
+                }
+                sum += nums[right];
+            }
+        }
+
+        return find ? retVal : 0;
+    }
+
     public static void main(String[] args) {
-        int[] nums = new int[]{1,2,3,4,5};
-        System.out.println(minSubArrayLen(11, nums));
+        int[] nums = new int[]{1,4,4};
+        System.out.println(minSubArrayLen2(4, nums));
     }
 }
