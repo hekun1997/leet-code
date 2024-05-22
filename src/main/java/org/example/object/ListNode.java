@@ -1,5 +1,7 @@
 package org.example.object;
 
+import java.util.List;
+
 /**
  * Created by hekun on 2021/9/24 21:24
  */
@@ -17,6 +19,19 @@ public class ListNode {
 
     public ListNode getNext() {
         return next;
+    }
+
+    public static ListNode createList(int[] vals) {
+        ListNode head = new ListNode();
+        ListNode p = head;
+
+        for (int j : vals) {
+            ListNode temp = new ListNode(j);
+            p.next = temp;
+            p = p.next;
+        }
+
+        return head.next;
     }
 
     @Override
