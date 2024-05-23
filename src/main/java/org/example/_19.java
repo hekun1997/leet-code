@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.object.ListNode;
 
+import java.util.Arrays;
+
 /**
  * @Author: hekun
  * @Date: 2022-03-10 16:49
@@ -32,13 +34,29 @@ public class _19 {
 
         return head;
     }
+
+    public static ListNode removeNthFromEnd2(ListNode head, int n) {
+        ListNode dummyNode = new ListNode(0);
+        dummyNode.next = head;
+
+        ListNode slow = dummyNode;
+        ListNode fast = dummyNode;
+
+        for (int i = 0; i <= n; i++) {
+            fast = fast.next;
+        }
+
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        if (slow.next != null) {
+            slow.next = slow.next.next;
+        }
+        return dummyNode.next;
+    }
+
     public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-//        ListNode next = head.setNext(new ListNode(2));
-//        next = next.setNext(new ListNode(3));
-//        next = next.setNext(new ListNode(4));
-//        next = next.setNext(new ListNode(5));
-//        next = next.setNext(new ListNode(6));
-        System.out.println(removeNthFromEnd(head, 1));
+        System.out.println(removeNthFromEnd2(ListNode.createListWithArr(Arrays.asList(1,2)), 2));
     }
 }

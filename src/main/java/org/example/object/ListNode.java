@@ -34,12 +34,25 @@ public class ListNode {
         return head.next;
     }
 
-    @Override
-    public String toString() {
+    public static ListNode createListWithArr(List<Integer> vals) {
+        ListNode head = new ListNode();
+        ListNode p = head;
 
-        return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
+        for (int j : vals) {
+            ListNode temp = new ListNode(j);
+            p.next = temp;
+            p = p.next;
+        }
+
+        return head.next;
     }
+
+//    @Override
+//    public String toString() {
+//
+//        return "ListNode{" +
+//                "val=" + val +
+//                ", next=" + next +
+//                '}';
+//    }
 }

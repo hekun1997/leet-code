@@ -26,32 +26,6 @@ public class _707 {
 }
 
 class MyLinkedList {
-    class ListNode {
-        int val;
-        ListNode next;
-
-        public ListNode() {}
-        public ListNode(int val) { this.val = val; }
-        public ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        public void setNext(ListNode next) {
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-
-            return "ListNode{" +
-                    "val=" + val +
-                    ", next=" + next +
-                    '}';
-        }
-
-    }
-
     ListNode head;
     int size;
 

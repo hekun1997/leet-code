@@ -2,6 +2,7 @@ package org.example;
 
 import org.example.object.ListNode;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -24,7 +25,23 @@ public class _141 {
         }
         return true;
     }
-    public static void main(String[] args) {
 
+    public static boolean hasCycle2(ListNode head) {
+        if (head == null) {
+            return false;
+        }
+        ListNode slow = head, fast = head;
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(hasCycle2(ListNode.createListWithArr(Arrays.asList(1,2))));
     }
 }
