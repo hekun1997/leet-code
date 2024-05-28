@@ -5,7 +5,6 @@ import org.example.object.ListNode;
 /**
  * @author hekun
  * @date 2024/5/21 16:39
- * @Description: TODO
  */
 public class _707 {
     public static void main(String[] args) {

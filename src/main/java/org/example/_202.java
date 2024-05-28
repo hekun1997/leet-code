@@ -6,7 +6,6 @@ import java.util.List;
 /**
  * @author hekun
  * @date 2024/5/23 17:22
- * @Description: TODO
  */
 public class _202 {
     public static boolean isHappy(int n) {

@@ -10,7 +10,6 @@ import java.util.Set;
 /**
  * @author hekun
  * @date 2024/5/23 10:23
- * @Description: TODO
  */
 public class _160 {
     public static ListNode getIntersectionNode(ListNode headA, ListNode headB) {

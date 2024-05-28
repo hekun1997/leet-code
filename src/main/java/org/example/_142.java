@@ -11,7 +11,6 @@ import java.util.Set;
 /**
  * @author hekun
  * @date 2024/5/23 10:48
- * @Description: TODO
  */
 public class _142 {
     public static ListNode detectCycle(ListNode head) {

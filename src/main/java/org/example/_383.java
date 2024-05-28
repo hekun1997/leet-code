@@ -6,7 +6,6 @@ import java.util.Map;
 /**
  * @author hekun
  * @date 2024/5/23 17:42
- * @Description: TODO
  */
 public class _383 {
     public static boolean canConstruct(String ransomNote, String magazine) {

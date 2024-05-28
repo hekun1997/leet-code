@@ -7,7 +7,6 @@ import java.util.Set;
 /**
  * @author hekun
  * @date 2024/5/23 15:05
- * @Description: TODO
  */
 public class _349 {
     public static int[] intersection(int[] nums1, int[] nums2) {

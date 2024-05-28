@@ -11,15 +11,11 @@ public class _15 {
         if (nums.length < 3) {
             return results;
         }
-
         int left, right;
         for (int i = 0; i < nums.length; i ++) {
             if (nums[i] > 0) {
                 return results;
             }
-
-
-
             left = i + 1;
             right = nums.length - 1;
             while (left < right) {
@@ -38,8 +34,6 @@ public class _15 {
                 }
             }
         }
-
-
         return results;
     }
     public static void main(String[] args) {

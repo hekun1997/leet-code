@@ -5,7 +5,6 @@ import org.example.object.ListNode;
 /**
  * @author hekun
  * @date 2024/5/22 14:38
- * @Description: TODO
  */
 public class _206 {
     public static ListNode reverseList(ListNode head) {

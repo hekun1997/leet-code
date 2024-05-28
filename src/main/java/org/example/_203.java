@@ -5,7 +5,6 @@ import org.example.object.ListNode;
 /**
  * @author hekun
  * @date 2024/5/21 15:55
- * @Description: TODO
  */
 public class _203 {
     public static ListNode removeElements(ListNode head, int val) {

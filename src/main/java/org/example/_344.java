@@ -18,6 +18,11 @@ public class _344 {
         }
     }
     public static void main(String[] args) {
-        reverseString(new char[]{'a', 'b', 'c', 'd', 'e', 'f'});
+        //reverseString(new char[]{'a', 'b', 'c', 'd', 'e', 'f'});
+        byte[] binaryData = new byte[]{0b00000001, 0b00000010, 0b00000011, 0b00000100};
+        binaryData[0] ^= binaryData[1];
+        binaryData[1] ^= binaryData[0];
+        binaryData[0] ^= binaryData[1];
+        System.out.println();
     }
 }

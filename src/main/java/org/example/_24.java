@@ -5,7 +5,6 @@ import org.example.object.ListNode;
 /**
  * @author hekun
  * @date 2024/5/22 14:49
- * @Description: TODO
  */
 public class _24 {
     public static ListNode swapPairs(ListNode head) {

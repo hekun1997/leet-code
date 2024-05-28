@@ -6,7 +6,6 @@ import java.util.Map;
 /**
  * @author hekun
  * @date 2024/5/23 14:56
- * @Description: TODO
  */
 public class _242 {
     public static boolean isAnagram(String s, String t) {
